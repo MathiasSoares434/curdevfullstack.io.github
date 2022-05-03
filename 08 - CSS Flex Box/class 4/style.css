@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    background: grey;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 600px;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+    /*align-items serve para itens na horizontal, enquanto que o align-content serve para itens na vertical*/
+
+    
+}
+
+.caixa{
+    width: 100px;
+    height: 100px;
+}
+.red{
+    background-color: red;
+    order: 2;
+    align-self: flex-end   ;
+    flex-grow: 2;
+}
+.blue{
+    background-color: blue;
+    order: 4;
+    flex-grow: 0.5;
+}
+.yellow{
+    background-color: yellow;
+    order: 1;
+    flex-grow: 5;
+    align-self: stretch;
+}
+.green{
+    background-color: green;
+    order: 3;
+}

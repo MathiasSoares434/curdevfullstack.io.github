@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.container .box .success, .container .box .warning, .container .box .danger {
+  text-align: center;
+  margin: 10px 0;
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
+  color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .box {
+  padding: 20px;
+  width: 31%;
+  display: block;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.container .box.horse {
+  background-color: aquamarine;
+}
+
+.container .box.black {
+  background-color: aqua;
+}
+
+.container .box p {
+  font-family: serif;
+  font-size: 18px;
+}
+
+.container .box p.hidden {
+  display: none;
+}
+
+.container .box h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+}
+
+.container .box a {
+  color: darkgreen;
+}
+
+.container .box a:hover {
+  color: midnightblue;
+}
+
+.container .box a:hover + p.hidden {
+  display: block;
+  color: red;
+}
+
+.container .box .success {
+  background-color: green;
+}
+
+.container .box .warning {
+  background-color: yellow;
+  color: black;
+}
+
+.container .box .danger {
+  background-color: red;
+}
+
+.container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*# sourceMappingURL=main.css.map */

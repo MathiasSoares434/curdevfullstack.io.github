@@ -1,0 +1,28 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    background-color: grey;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.caixa{
+    width: 200px;
+    height: 200px;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}

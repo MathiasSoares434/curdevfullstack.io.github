@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Avançado</title>
+</head>
+<body>
+     <fieldset>
+         <legend>Dados do Usuário</legend>
+    <form action="salvar.html">
+    <label for="Nome">Digite seu nome:</label>
+    <input type="text" placeholder="Nome"> 
+    
+        <br><br>
+    
+    <label for="senha">Digite sua senha:</label>
+    <input type="text" placeholder="Password">  
+
+
+    <br><br>  
+    
+    <label for="e-mail">Digite seu e-mail</label>
+    <input type="text" placeholder="E-mail">    
+
+        <br><br>
+
+    <label for="cor">Escolha sua cor</label>
+    <input type="color">
+
+        <br><br> 
+    
+    <label>Escolha o Sexo:</label>  
+    <br>  
+    <input name="sexo" type="radio" value="masculino" ><label for="masculino">Masculino</label> 
+        
+        <br>
+
+    <input name="sexo" type="radio" value="feminino" ><label for="feminino">Feminino</label> 
+
+        <br>
+
+    <input name="sexo" type="radio" value="prefiro não responder"><label for="indefinido">Prefiro não responder</label> 
+    
+    <br><br>
+
+    <label for="habilidades">Habilidades</label>
+    <br>
+    <input type="checkbox" value="html" id="HTML"><label for="HTML">HTML</label>
+    <br>
+    <input type="checkbox" value="css" id="CSS"><label for="CSS">CSS</label>
+    <br>
+    <input type="checkbox" value="javascript" id="Javascript"><label for="Javascript">Javascript</label>
+    
+    <br><br>
+
+    <label for="cidade">Cidade:</label>
+    <select name="cidade" id="cidade">
+        <option value="">--Selecione--</option>
+        <option value="recife">Recife</option>
+        <option value="rio-de-janeiro">Rio Janeiro</option>
+        <option value="coritiba">Coritiba</option>
+        <option value="santa-catarina">Santa Catarina</option>
+        <option value="são-paulo">São Paulo</option>
+    </select>
+        <br><br>
+    <label for="carro">Carro:</label>
+    <select name="carro" id="carro">
+       <option value="">--Selecione o modelo--</option>
+        <optgroup label="Honda">
+        <option value="Civic">Civic</option>
+       </optgroup>
+       <optgroup label="Chevrolet">
+        <option value="Celta">Celta</option>           
+       </optgroup>
+       <optgroup label="Fiat">
+        <option value="Uno">Uno</option>
+       </optgroup>
+       <optgroup label="Renault">
+        <option value="Sandero">Sandero</option>
+       </optgroup>
+    </select>
+
+        <br><br>
+    <label>Digite a sua fruta preferida:</label>
+    <input list="listaFrutas" type="text" name="frutas" placeholder="Digite sua fruta">
+        <br><br>
+            <datalist id="listaFrutas">
+                <option value="Abacate"></option>
+                <option value="Abacaxi"></option>
+                <option value="Acerola"></option>
+                <option value="Maçã"></option>
+                <option value="Banana"></option>
+                <option value="Melancia"></option>
+            </datalist>
+            <br><br>
+           <label for="opinião">Digite sua opinião abaixo:</label>
+           <br>
+            <textarea name="opinião" placeholder="Digite sua opinião" cols="70" rows="15"></textarea>
+            <br><br>
+        <button>Enviar</button>
+    </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+@import 'variables';
+@import 'base';
+@import 'mixin'; 
+@import 'extends';
+.container{
+    display: flex;
+    justify-content: space-around;
+.box{
+    padding: 20px;
+    width: 31%;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+
+&.horse{
+       background-color: $color-secondary;
+   }
+   &.black{
+       background-color: aqua;
+   }
+    p{
+        font-family: serif;
+        font-size: 18px;
+        &.hidden{
+            display: none;
+        }
+    }
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+    }
+    a{
+        color: darkgreen;
+        &:hover{
+            color: midnightblue;
+            & + p.hidden{
+                display: block;
+                color: red;
+            }
+        }
+    }
+    .success{
+        @extend %box-alert;
+        @include bg-effect(success);
+    }
+    .warning{
+        @extend %box-alert;
+        @include bg-effect(warning);
+        
+    }
+    .danger{
+        @extend %box-alert;
+        @include bg-effect(danger);
+        
+    }
+}    
+ul{
+    @include reset-list() ;
+}    
+
+}

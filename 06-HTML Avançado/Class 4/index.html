@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="salvar.html" method="get">
+        <label for="nome">Nome:</label>
+        <input id="nome" name="nome" type="text" placeholder="Digite o seu nome">
+       
+        <br><br>
+       
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Digite o seu email">
+       
+        <br><br>
+       
+        <label for="senha">Senha</label>
+        <input id="senha" name="senha" type="password" placeholder="Digite sua senha">
+     
+        <br><br>
+
+        <label>Selecione sua cor</label>
+        <input type="color" name="cor">
+
+        <br><br>
+
+        <label>Sexo:</label>
+        <br>
+        <input name="sexo" type="radio" value="masculino" id="masculino"> <label for="masculino">Masculino</label> 
+       
+        <input name="sexo" type="radio" value="feminino" id="feminino"><label for="feminino">Feminino</label>
+        
+        <input name="sexo" type="radio" value="outros" id="outros"><label for="outros">Outros</label>
+        <br><br>
+
+        <label>Habilidades:</label>
+        <br>
+        <input name="habilidades" type="checkbox" value="html" id="html"> <label for="html">HTML</label>
+        <br>
+        <input name="habilidades" type="checkbox" value="css" id="css"> <label for="css">CSS</label>
+        <br>
+        <input name="habilidades" type="checkbox" value="javascript" id="javascript"> <label for="javascript">Javascript</label>
+        <br><br>
+        <label>Cidade:</label>
+        <br>
+        
+        <select name="cidade">
+            <option value="">--Selecione a capital--</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Recife">Recife</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+        </select>
+        <br><br>
+        <label>Carro:</label>
+        <br>
+        <select name="carro">
+            <optgroup label="Honda">
+            <option value="Civic">Civic</option>    
+            </optgroup>
+           <optgroup label="Chevrolet">
+            <option value="Celta">Celta</option>   
+           </optgroup>
+            <optgroup label="Fiat">
+            <option value="Uno">Uno</option>    
+            </optgroup>
+            
+        </select>
+        <br><br>
+        <button>Enviar</button>
+    </form>    
+
+</body>
+</html>
