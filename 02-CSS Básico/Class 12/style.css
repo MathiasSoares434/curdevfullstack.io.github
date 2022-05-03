@@ -1,0 +1,97 @@
+ body {
+        background: rgb(216, 216, 216);
+        font-family: 'Ubuntu', sans-serif;
+         color: rgba(0, 0, 0, 0.644);
+         margin: 0px;
+}
+
+.container{
+        width: 670px;
+        color: rgb(185, 15, 15);
+        margin: 0 auto;
+        text-align: center;
+}
+.spot{
+        text-align: center;
+     
+}
+
+.foto-principal {
+       border: 2px solid #FFFF; /*shorthand*/
+      border-radius: 50%;
+        /* border-width: 5px;
+        border-color: aquamarine;
+        border-style: solid;
+        */
+       margin: 30px 30px 0px 30px;
+        /*margin-top: 100px;
+        margin-right: 40px;
+        margin-bottom: 150px;     
+        margin-left: 70px;*/
+       /*padding:
+        padding, para aumentar as bordas de uma imagem, funciona como o 'margin'*/
+        /*box-shadow:
+        Na maioria das vezes é melhor utilizar o hexadecimal para se referir as cores por conta do devtools*/
+        margin-top: 10px;
+}
+h1{
+        margin-bottom: 0%;
+        letter-spacing: 0;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 40px;
+        color: rgb(119, 122, 131);
+        text-align: center;
+}
+
+.Fotos{
+        width: 50px;
+        text-decoration: none;
+        margin-right: 15px;
+
+}
+
+h2{
+        margin-top: 0%;
+        font-style: italic;
+        color: #000000;
+        font-weight: lighter;
+        text-align: left;
+}
+
+h3{
+        margin-bottom: 20px;
+}
+h4{
+        margin-top: 0px;
+        font-weight: 100;
+        font-style: italic;
+}
+ul{
+        color: #4609f083;
+}
+
+
+        /*background-color: aquamarine;
+        width: 100px;
+        height: 100px;
+        border: 7px solid firebrick;
+        border-radius: 6px;
+        margin: 0 auto 0 auto;*/
+li{
+        text-align:left ;
+}        
+
+.job{
+        list-style: none;
+        padding-left: 26px;
+       
+
+}
+.further{
+        background-color: #000000;
+        margin-top: 40px;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+}
+

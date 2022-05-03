@@ -1,0 +1,14 @@
+body{
+    background: url("https://www.significadofacil.com/wp-content/uploads/2019/07/background-1200x675.jpg");
+}
+
+ul{
+    background: grey;
+    padding: 30px;
+    opacity: 0.8;
+}
+
+ul li{
+    display: inline-block;
+    margin: 20px;
+}

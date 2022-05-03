@@ -1,0 +1,12 @@
+body {
+        background-image: url(7.jpeg);
+        background-repeat: no-repeat;
+        /*background-position: 100% 10%/;  */
+        background-position: right center;
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+p{
+        color: rgba(110, 84, 84, 0.507);
+}

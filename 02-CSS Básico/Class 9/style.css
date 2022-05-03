@@ -1,0 +1,39 @@
+        body {
+        background: rgb(216, 216, 216);
+        font-family: 'Ubuntu', sans-serif;
+         color: rgba(0, 0, 0, 0.644);
+}
+
+
+.foto-principal {
+       border: 2px solid #FFFF; /*shorthand*/
+      border-radius: 50%;
+        /* border-width: 5px;
+        border-color: aquamarine;
+        border-style: solid;
+        */
+       margin: 30px 30px 30px 30px;
+        /*margin-top: 100px;
+        margin-right: 40px;
+        margin-bottom: 150px;     
+        margin-left: 70px;*/
+        padding: 50px;
+        /*padding, para aumentar as bordas de uma imagem, funciona como o 'margin'*/
+        box-shadow: 12px 4px 4px #e72828;
+        /*Na maioria das vezes é melhor utilizar o hexadecimal para se referir as cores por conta do devtools*/
+}
+h1{
+        margin-bottom: 0%;
+        letter-spacing: 0;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 40px;
+}
+h2{
+        margin-top: 0%;
+        font-style: italic;
+        color: #000000;
+        font-weight: lighter;
+}
+ul{
+        color: #000000;
+}

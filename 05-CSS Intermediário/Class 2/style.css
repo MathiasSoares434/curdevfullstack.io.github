@@ -1,0 +1,22 @@
+h1{
+    text-shadow: 2px 2px 5px green;
+}
+
+
+
+p{
+    color: blueviolet;
+    text-align: justify;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    /*font-variant: small-caps;*/
+    text-transform: uppercase;
+    text-indent: 50px;
+    word-spacing: 20px;
+    line-height: 50px;
+}
+a{
+    text-decoration: none;
+    letter-spacing: 15px;
+}

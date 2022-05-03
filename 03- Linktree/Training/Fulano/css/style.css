@@ -1,0 +1,68 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background: rgb(74,175,13);
+    background: linear-gradient(90°deg, rgba(74,175,13,1) 30%, rgba(17,198,25,1) 70%);
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+.avatar{
+    width: 20%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 20px ;
+    margin-top: 30px;
+}
+h1{
+    font-family: 'Merriweather', serif;
+    color: rgb(32, 12, 214);
+    font-size: 100%;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+h2{
+    font-size: 100%;
+    margin-top: 2px;
+}
+.profile{
+    text-align: center;
+    margin-top: 20px;
+}
+.social{
+display: flex;
+justify-content: space-around;
+list-style: none;
+margin: 20px 0;
+
+}
+
+.social img{
+    width: 40px;
+    text-decoration: none;
+}
+.links-list{
+    list-style: none;
+}
+.links-list li{
+    margin: 10px 20px;
+}
+
+.links-list li a{
+    background: white;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 5px;
+    font-size: 130%;
+    text-decoration: none;
+    color: rgb(74,175,13);
+    font-weight: bold;
+}
+.links-list li a span{
+    color: grey;
+    display: block;
+}

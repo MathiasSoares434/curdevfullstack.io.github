@@ -1,0 +1,23 @@
+body {
+        background: #cecece;
+}
+p{
+        color: rgba(110, 84, 84, 0.507);
+}
+.foto-principal {
+       border: 2px solid #FFFF; /*shorthand*/
+      border-radius: 50%;
+        /* border-width: 5px;
+        border-color: aquamarine;
+        border-style: solid;
+        */
+       margin: 30px 30px 30px 30px;
+        /*margin-top: 100px;
+        margin-right: 40px;
+        margin-bottom: 150px;     
+        margin-left: 70px;*/
+        padding: 50px;
+        /*padding, para aumentar as bordas de uma imagem, funciona como o 'margin'*/
+        box-shadow: 12px 4px 4px #444e81;;
+
+}

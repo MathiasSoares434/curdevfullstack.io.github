@@ -1,0 +1,45 @@
+a{
+    color: blue;
+}
+a:hover{
+    color: rgb(4, 1, 46);
+    font-weight: bold ;
+}
+a:hover + .caixa{
+    display: block;
+}
+a:visited{
+    color: rgb(69, 104, 134);
+}
+a:active{
+    color: blueviolet;
+}
+.caixa{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    display: none;
+}
+.caixa:hover{
+    background-color: cadetblue;
+    width: 30px;
+    height: 30px;
+}
+ul li:first-child{
+    color: red;
+
+}
+ul li:last-child{
+    color: brown
+
+}
+
+.exemplo1 p:first-child{
+    background-color: bisque;
+    color: blue;
+
+}
+.exemplo2 p:nth-child(5){
+    color: orange;
+    background-color: darkgreen;
+}
