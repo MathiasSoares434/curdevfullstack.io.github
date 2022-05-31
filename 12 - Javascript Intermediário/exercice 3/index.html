@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice 3</title>
+    <style>
+        #div-bairro{
+            display: none;
+            margin-top: 20px;
+        }
+        .visible{
+            display: block !important;
+        }
+        button{
+            padding: 15px;
+            border: 0.5px solid black;
+            margin-top: 15px;
+        }
+        .inputError{
+            border: 1px solid red;
+        }
+        .erro{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+   <form id="formCadastrado" action="gravarDados.html">
+        <div>
+        <label>Cidades:
+            <select name="cidade" id="select-cidades">
+                <option value="">--Selecione a Cidade--</option>
+                <option value="ol">Olinda</option>
+                <option value="re">Recife</option>
+            </select> 
+            <span class="erro"></span>  
+        </label>
+        </div> 
+
+
+        <div id="div-bairro">
+            <label>
+                Bairros:
+                <select name="bairro" id="select-bairros"></select>
+                <span class="erro"></span> 
+            </label>
+        </div>
+        <button type="submit">Cadastrar</button>
+   </form>    
+    <script src="/script.js"></script>
+</body>
+</html>
