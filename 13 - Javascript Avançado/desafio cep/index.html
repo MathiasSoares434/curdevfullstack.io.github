@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Consulta do CEP</title>
+    <link rel="shortcut icon" href="/location-dot-solid.svg" type="image/x-icon">
+    
+    <style>
+        body{
+            background-color: rgb(189, 188, 188);
+        }
+        h1{
+            color: rgb(29, 31, 29);
+            font-weight: 300;
+        }
+        form{
+            color: black;
+            font-weight: 300;
+        } 
+        p{
+            font-weight: 400;
+            font-size: 20px;
+        }
+        input{
+            border-style: none;
+            padding: 3px;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Informe seu CEP</h1>
+    <p>Após digitar o CEP, aperte TAB para apareceer as informações sobre o seu endereço.</p>
+    <form method="get" action=".">
+        <label>CEP: <input name="cep" type="text" id="cep" size="10" maxlength="9" onblur="pesquisacep(this.value)">
+        </label> 
+        <br> <br>
+        <label>
+            Rua: <input  name="rua" type="text" id="rua" size="60">
+        </label> 
+        <br> <br>
+        <label>
+            Bairro: <input  name="bairro" type="text" id="bairro" size="40">
+        </label> 
+        <br> <br>
+        <label>
+            Cidade: <input  name="cidade" type="text" id="cidade" size="40"> 
+        </label>
+        <br> <br>   
+        <label>
+            Estado: <input  name="uf" type="text"  id="uf" size="2">
+        </label>
+    </form>
+
+    <script>
+        (function(){
+            const cep = document.querySelector("input[name=cep]");
+            cep.addEventListener('blur', e => {
+                const value = cep.value.replace(/[^0-9]+/, '');
+                const url = `https://viacep.com.br/ws/${value}/json/`;
+             fetch(url)
+             .then(response => response.json())
+             .then(json => {
+                if(json.logradouro){
+                    document.querySelector('input[name=rua]').value = json.logradouro;
+                    document.querySelector('input[name=bairro]').value = json.bairro;
+                    document.querySelector('input[name=cidade]').value = json.localidade;
+                    document.querySelector('input[name=uf]').value = json.uf;
+                }
+                
+             });   
+            })
+        }) ();
+    </script>
+</body>
+</html>

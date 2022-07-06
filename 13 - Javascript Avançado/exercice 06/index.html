@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 06</title>
+    <style>
+      .hidden{
+        display: none;
+      }
+    </style>
+</head>
+<body>
+    <form id="formulario">
+      <input type="text" placeholder="Digite uma mensagem" id="message">
+      <button type="submit" id="botaoEnviar">Enviar</button>
+      <img src="/loading.gif" width="25" id="loaded" class="loaded hidden">
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+      const formulario = document.querySelector('#formulario')
+      const message = document.querySelector('#message')
+      const botaoEnviar = document.querySelector('#botaoEnviar')
+      const loaded = document.querySelector('#loaded')
+      const result = document.querySelector('#result')
+
+      function job(msg){
+        return new Promise((resolve, reject)=> {
+          setTimeout(() => {
+            resolve(msg)
+          }, 10000)
+        })
+      }
+      
+      formulario.onsubmit = function(e){
+        e.preventDefault()
+
+        const inputMsg = message.value
+
+        botaoEnviar.classList.add('hidden')
+        loaded.classList.remove('hidden')
+
+
+        job(inputMsg).then(msg => {
+          formulario.classList.add('hidden')
+          
+          result.innerHTML = msg
+        })
+
+      }
+
+    </script>
+</body>
+</html>
